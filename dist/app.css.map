@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/scss/app.scss"],"names":[],"mappings":"AAAA;AACA;AACA;AACA,aAAa;;AAEb;AACA,4BAA4B","file":"app.css","sourcesContent":["* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\nbody {\n  background-color: #f4f4f4; }\n"],"sourceRoot":""}
