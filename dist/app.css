@@ -1,3 +1,6 @@
+/* Base Colours*/
+/* Primary Colours */
+/* Font */
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
@@ -8,17 +11,55 @@
 html {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Ubuntu", sans-serif; }
 
 *, *:after, *:before {
   box-sizing: inherit; }
 
 body {
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  padding: 0;
+  margin: 0; }
 
-h1 {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 40px; }
+.showcase {
+  background-color: #0e6cff;
+  color: #fff;
+  height: 600px; }
+  .showcase nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .showcase nav ul {
+      list-style-type: none;
+      display: flex; }
+    .showcase nav li {
+      padding: 15px;
+      font-size: 18px; }
+    .showcase nav a:hover {
+      color: #ff8700;
+      text-decoration: underline; }
+  .showcase a {
+    color: #fff;
+    text-decoration: none; }
+  .showcase-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .showcase-content img {
+      width: 50%; }
+    .showcase-content h1 {
+      font-size: 46px;
+      line-height: 1.2; }
+    .showcase-content p {
+      margin: 20px 0; }
+
+.container {
+  max-width: 1140px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto; }
 
 
 /*# sourceMappingURL=app.css.map*/
