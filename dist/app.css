@@ -1,10 +1,24 @@
-* {
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu Regular"), local("Ubuntu-Regular"), url(fonts/Ubuntu-Regular.ttf) format("truetype"); }
+
+/* ubuntu-regular - latin */
+html {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
+*, *:after, *:before {
+  box-sizing: inherit; }
+
 body {
   background-color: #f4f4f4; }
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px; }
 
 
 /*# sourceMappingURL=app.css.map*/

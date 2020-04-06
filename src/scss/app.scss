@@ -1,11 +1,23 @@
 @import 'variables';
-* {
+@import 'fonts';
+
+$font-stack: 'Ubuntu', sans-serif;
+
+html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+*, *:after, *:before {
+    box-sizing: inherit;
+} 
+
 body {
     background-color: $light-color;
 }
 
+h1 {
+    font-family: $font-stack;
+    font-size: 40px;
+}
