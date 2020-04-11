@@ -1,0 +1,35 @@
+// set text colour based on back-ground colour
+
+@function set-text-color($color) {
+    @if(lightness($color) > 70%) {
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+}
+
+// Set background and text colour
+@mixin set-background ($color) {
+    background-color: $color;
+    color:  set-text-color($color);
+}
+
+/* margin and padding classes */
+$spaceamounts: (1,2,3,4,5);
+@each $space in $spaceamounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    
+    .p-#{$space} {
+        margin: #{$space}rem;
+    }
+
+    .py-#{$space} {
+        margin: #{$space}rem 0;
+    }
+}

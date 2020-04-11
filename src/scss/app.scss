@@ -1,5 +1,7 @@
 @import 'variables';
+@import 'config';
 @import 'fonts';
+@import 'buttons';
 
 
 
@@ -14,6 +16,10 @@ html {
     box-sizing: inherit;
 } 
 
+a { 
+    text-emphasis: none;
+}
+
 body {
     background-color: $light-color;
     padding: 0;
@@ -21,8 +27,9 @@ body {
 }
 
 .showcase {
-    background-color: $primary-color;
-    color: $white;
+    // background-color: $primary-color;
+    // color: set-test-color($primary-color);
+    @include set-background($primary-color);
     height: 600px;
 
     nav {
@@ -40,16 +47,20 @@ body {
             font-size: $base-size + 2;
         }
 
+        a {
+            color: set-text-color($primary-color);
+            text-decoration: none;
+        }
+        
         a:hover {
             color: $secondary-color;
             text-decoration: underline;
         }
     }
-
-    a {
-        color: $white;
-        text-decoration: none;
-    }
+    
+    // a {
+    //     color: set-test-color($primary-color);
+    // }    
 
     &-content {
         height: 100%;
@@ -67,7 +78,7 @@ body {
         }
 
         p {
-            margin: 20px 0;
+            // margin: 20px 0;
         }
     }
 }
@@ -79,3 +90,6 @@ body {
     overflow: auto;
 
 }
+
+
+@import 'mobile';
