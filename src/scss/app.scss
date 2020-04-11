@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'config';
+@import '0-plugins/plugins-dir';
 @import 'fonts';
 @import 'buttons';
 
@@ -22,8 +23,11 @@ a {
 
 body {
     background-color: $light-color;
+    // background-color: shade(#ffbb52, 60%);
     padding: 0;
     margin: 0;
+    // font-family: $font-stack-monaco;
+    font-family: $font-stack-courier-new;
 }
 
 .showcase {

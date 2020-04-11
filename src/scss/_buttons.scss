@@ -5,6 +5,7 @@
     margin: 3px;
     text-decoration: none;
     
+    
     &:hover {
         transform: scale(0.98);
     }
@@ -14,6 +15,8 @@
     @extend %btn;
     // background-color: lighten($primary-color, 10%);
     @include set-background (lighten($primary-color, 10%));
+    @include border-color(#a60b55 #76cd9c null #e8ae1a);
+    @include border-right-radius(15px);
 }
 
 .btn-secondary {

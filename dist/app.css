@@ -77,7 +77,12 @@
 
 .btn-primary {
   background-color: #418bff;
-  color: #fff; }
+  color: #fff;
+  border-top-color: #a60b55;
+  border-right-color: #76cd9c;
+  border-left-color: #e8ae1a;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px; }
 
 .btn-secondary {
   background-color: #ff8700; }
@@ -97,7 +102,8 @@ a {
 body {
   background-color: #f4f4f4;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: "Courier New", "Courier", "Lucida Sans Typewriter", "Lucida Typewriter", monospace; }
 
 .showcase {
   background-color: #0e6cff;
